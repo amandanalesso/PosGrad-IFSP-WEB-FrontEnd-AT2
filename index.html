@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <title>Minhas Compras</title>
+</head>
+<body class="container">
+    <header>
+        <nav>
+            <h1>Meus Pedidos</h1>
+            <ul>
+                <li><a href="#meus-dados">Meus dados</a></li>
+                <li><a href="#minhas-compras">Minhas Compras</a></li>
+                <li><a href="#avaliar-produto">Avaliar Produto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="meus-dados">
+            <h2>Meus Dados</h2>
+            <form action="#">
+                <fieldset>
+                    <legend>Dados do Contato</legend>
+                    <div class="content-section">
+                        <label for="email">e-mail:</label>
+                    </div>
+                    <div class="content-section">
+                        <input type="email" placeholder="ex: seuemail@gmail.com" name="email" required/>
+                    </div>
+                    <div class="content-section">
+                        <input type="checkbox" name="email-promocional">
+                        <label for="email-promocional">Quero receber e-mails promocionais</label>
+                    </div>
+                    <div class="content-section">
+                        <label for="email">Senha:</label>
+                    </div>
+                    <div class="content-section">
+                        <input type="password"placeholder="use uma senha forte" required/>  
+                    </div>             
+                </fieldset>
+                <fieldset>
+                        <legend>Dados Pessoais</legend>
+                            <div class="content-section">
+                                 <label for="name">Nome Completo</label>
+                            </div>        
+                            <div class="content-section">
+                                <input type="text" placeholder="Nome Completo">
+                            </div>
+                            <div class="content-section">    
+                                <label for="apelido">Como gostaria de ser chamado?(opcional)</label> 
+                            </div>      
+                            <div class="content-section">
+                                <input type="text" placeholder="amanda" type="text" name="apelido">
+                            </div>
+                </fieldset>
+                <button class="btn-salvar" type="submit">Salvar Alterações</button>
+            </form>
+        </section>
+    </br>
+        <section id="minhas-compras">
+          
+            <div class="section border">
+                    <div class="content-section">
+                        <p>Numero do pedido</p>
+                        <p>37945982</p>
+                    </div>
+                    <div class="content-section">
+                        <p>Status</p> 
+                        <p>Concluido</p>
+                    </div>
+                    
+                    <div class="content-section">
+                        <p>Data</p> 
+                        <p>12/12/2020</p>
+                    </div>        
+                    
+                    <div class="content-section">
+                        <p>Forma de pagamento</p>
+                        <p>Cartão de crédito</p>
+                    </div>    
+                    
+                    <div class="content-section">
+                        <p>Acompanhamento</p> 
+                        <button type="button" onclick="modalDialog.showModal();">
+                            Rastreio Detalhado
+                        </button>
+                        <dialog id="modalDialog">
+                            <h1>Rastreio detalhado</h2>
+                            <p>Seu pedido foi entregue com sucesso!</p>
+                            <p>Entregue por: GFL</p>
+                            <p>Código de rastreio: 123456789</p>
+                            <p>Entregue em: 12/12/2020</p>
+                            <button type="button" onclick="modalDialog.close()" >Fechar</button>   
+                        </dialog>  
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+            <div class="section border">  
+                <div class="content-section">
+                    <figure>
+                        <img src="img.png" alt="Imagem de suporte articulado para monitor" width="100" height="70"></src>
+                    </figure>
+                </div>      
+            <div class="content-section">           
+                <h3>Suporte articulado para Monitor e Notebook de 13 a 32 Vinik, Articulação Dupla - SMN500</h3>
+                <p>Quantidade:1</p>
+                <a href="#avaliar-produto">Avaliar Produto</a>        
+            </div>
+            <div class="content-section">
+            <p>R$99,90</p>
+            </div>
+        </div>
+            <details>
+                <summary>Detalhes do pagamento e envio</summary>
+                <div class="section">
+                    <div class="content-section">    
+                        <h3>Endereço de entrega</h3>
+                        <p>Avenida Estelita Falcão</p>
+                        <p>Númeron12, Centro</p>
+                        <p>CEP 48170-970 - Água Fria/BA</p>
+                    </div>
+                    <div class="content-section">
+                        <h3>Forma de pagamento</h3>
+                        <p>Cartão de crédito</p>
+                        <p>Master Card **** **** **** 1234</p>
+                        <p>Titular: João da Silva</p>
+                    </div>
+                    <div class="content-section">
+                        <h3>Frete</h3>
+                        <p>R$ 15, 52</p>
+                        <p>Enviado por GFL</p>
+                        <p>Entregue</p>
+                    </div>
+                </div>
+            </details>
+           <hr>
+        </section>
+        
+        <section id="content-section">             
+            <h2>Avaliação do produto</h2>
+            <form action="#">
+                <fieldset>
+                    <legend>Opinião sobre o produto</legend>
+                        <div class="content-section">
+                            <label for="color">Qual cor do produto mais te agrada?</label>
+                        <div class="content-section">
+                            <input id="color" value="#888899" list="pick-color" type="color">
+                        </div>
+                        <div class="content-section">    
+                        <datalist id="pick-color">
+                            <option>#2e2624</option>
+                            <option>#000000</option>
+                            <option>#625d73</option>
+                            <option>#cbc7c4</option>
+                            <option>#837a7b</option>
+                            <option>#605754</option>
+                            <option>#9092a5</option>
+                            <option>#515002</option>
+                            <option>#515054</option>
+                            <option>#ffffff</option>
+                        </datalist>  
+                    </div>
+                        <div>    
+                             <label for="qualidade"><strong>O produto é de qualidade?</strong></label>
+                       </div>
+                        <div class="content-section">
+                            <input type="radio">
+                            <label for="concordo-totalmente">Concordo Totalmente
+                        </div>            
+                        
+                        <div class="content-section">
+                            <input type="radio">
+                            <label for="concordo">Concordo</label>
+                        </div>    
+
+                        <div class="content-section">
+                            <input type="radio">
+                            <label>Não estou decidido</label>
+                        </div>
+                        <div class="content-section">    
+                            <input type="radio">
+                            <label for="Discordo">Discordo</label>
+                        </div>
+
+                        <div class="content-section">
+                            <input type="radio">
+                            <label for="Discordo-totalmente">Discordo Totalmente</label>
+                        </div>    
+                        <br/>
+                    <label><strong>Para você, quais paramêtros são mais importantes na qualidade do produto?</label>
+                    </strong>
+                    <div class="content-section">
+                        <input type="checkbox"> 
+                        <label for="durabilidade">Durabilidade</label>
+                    </div>
+                   
+                    <div class="content-section">
+                        <input type="checkbox"> 
+                        <label for="caracteristicas-acessorias">Caracteristicas Acessórias ou Features</label>
+                    </div>
+                    <div class="content-section">
+                        <input type="checkbox"> 
+                        <label for="confiabilidade">Confiabilidade</label>
+                    </div>
+                    <div class="content-section">
+                        <input type="checkbox"> 
+                        <label for="aparencia">Aparência</label>
+                    </div>            
+                   
+                    <div class="content-section">   
+                        <label for="caracteristicas"><strong>Descreva a característica que mais chamou sua atenção no produto</strong></strong></label>
+                        <input list="lista-caracteristicas" id="caracteristicas" name="caractetisticas">
+                             <datalist id="lista-caracteristicas">
+                                <option value="Cor">
+                                <option value="Tamanho">
+                                <option value="Peso">
+                                <option value="Material">                   
+                                </datalist>
+                    </div> 
+                </fieldset>
+
+                <fieldset>
+                    <legend>Condições Atuais</legend>
+                    <div class="content-section"> 
+                        <label for="file-upload">Adicione uma foto atual do produto</label>
+                    </div>
+                    <div class="content-section">  
+                        <input type="file" name="file-upload" id="file-upload">
+                    </div>
+                    <div class="content-section"> 
+                        <label for="data-compra">Data da compra</label>
+                    </div>
+                    <div class="content-section">
+                        <input type="date">
+                    </div>    
+                    <div class="content-section"> 
+                        <h3><label for="comentario">Deixe um comentário sobre as condições do produto</label></h3>
+                        <textarea id="story" name="story" rows="8" cols="30"></textarea>
+                    </div>
+                </fieldset>    
+
+                 <button class="btn-send">Enviar avaliação</button>
+            </section>  
+    </main>             
+</body>
+</html>
