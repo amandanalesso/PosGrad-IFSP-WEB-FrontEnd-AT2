@@ -7,4 +7,6 @@ A página de compras simula um ambiente de comércio eletrônico, incluindo seç
 
 ## Como Executar
 
-Para visualizar a página, basta clonar o repositório ou abrir o arquivo `index.html`.
+Para visualizar a página de compras localmente, basta clonar o repositório ou abrir o arquivo `index.html`.
+
+
