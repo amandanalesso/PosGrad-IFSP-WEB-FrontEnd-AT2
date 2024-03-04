@@ -1,0 +1,38 @@
+body{
+font-family: Arial, sans-serif;
+}
+
+fieldset{
+    margin-bottom:  20px;
+}
+
+.border{
+    border: 1px solid black;
+    margin-bottom:  20px;
+}
+.section{
+    background-color: rgb(247, 255, 255);
+    display: flex;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.content-section{
+   justify-content: space-between;
+}
+
+.content-section {
+    flex: 1; 
+    padding: 10px; 
+    margin-right: 10px; 
+}
+
+
+.img-margin{
+    margin-bottom: 10px;
+}
+
