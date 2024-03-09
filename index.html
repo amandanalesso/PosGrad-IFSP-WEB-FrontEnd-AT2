@@ -9,19 +9,22 @@
 <body>
     <div class="container">
       <header>
-        <h1>Meus Pedidos</h1>
-        <nav>        
-            <ul>
-                <li><a href="#meus-dados">Meus dados</a></li>
-                <li><a href="#minhas-compras">Minhas Compras</a></li>
-                <li><a href="#avaliar-produto">Avaliar Produto</a></li>
-            </ul>
-        </nav>
-      </header>
-    <main>
-        <section id="meus-dados">
-            <h2>Meus Dados</h2>
             <div class="content-section">
+                <h1>Meus Pedidos</h1>
+                <nav>        
+                    <ul>
+                        <li><a href="#meus-dados">Meus dados</a></li>
+                        <li><a href="#minhas-compras">Minhas Compras</a></li>
+                        <li><a href="#avaliar-produto">Avaliar Produto</a></li>
+                    </ul>
+                </nav>
+            </div>
+      </header>
+      
+    <main>
+        <div class="content-section">
+             <section id="meus-dados">
+                <h2>Meus Dados</h2>
                 <form action="#">
                     <fieldset>
                             <legend>Dados do Contato</legend>
@@ -117,23 +120,23 @@
                     </div>       
                 </div>
 
-                <div class="content-section">
+               
                 <details>
                     <summary>Detalhes do pagamento e envio</summary>
-                        <div class="details">
-                            <div class="content-section">
+                            <div class="details-container">
+                            <div class= "details">
                                 <h3>Endereço de entrega</h3>
                                 <p>Avenida Estelita Falcão</p>
                                 <p>Númeron12, Centro</p>
                                 <p>CEP 48170-970 - Água Fria/BA</p>
                             </div>
-                            <div class="content-section">
+                            <div class="details">
                                 <h3>Forma de pagamento</h3>
                                 <p>Cartão de crédito</p>
                                 <p>Master Card **** **** **** 1234</p>
                                 <p>Titular: João da Silva</p>
                             </div>
-                            <div class="content-section">
+                            <div class="details">
                                 <h3>Frete</h3>
                                 <p>R$ 15, 52</p>
                                 <p>Enviado por GFL</p>
@@ -141,7 +144,7 @@
                             </div>
                         </div>
                 </details>
-                </div>
+                
                <hr>
         </section>
         <section id="avaliar-produto">
@@ -205,7 +208,7 @@
                     </div>
                    
                     <div class="content-section">
-                        <input type="checkbox" name="dur"> 
+                        <input type="checkbox" name="caracteristicas-acessorias"> 
                         <label for="caracteristicas-acessorias">Caracteristicas Acessórias ou Features</label>
                     </div>
                     <div class="content-section">
@@ -218,14 +221,14 @@
                     </div>            
                    
                     <div class="content-section">   
-                        <label for="caracteristicas"><strong>Descreva a característica que mais chamou sua atenção no produto</strong></strong></label>
+                        <label for="caracteristicas"><strong>Descreva a característica que mais chamou sua atenção no produto</strong></label>
                         <input list="lista-caracteristicas" id="caracteristicas" name="caractetisticas">
                              <datalist id="lista-caracteristicas">
                                 <option value="Cor">
                                 <option value="Tamanho">
                                 <option value="Peso">
                                 <option value="Material">                   
-                                </datalist>
+                            </datalist>
                     </div> 
                 </fieldset>
 
@@ -251,7 +254,8 @@
                 <button class="btn-send">Enviar avaliação</button>
             </div>
         </section>
+      </div> 
     </main>
-    </div>
+    </div>  
 </body>
 </html>
