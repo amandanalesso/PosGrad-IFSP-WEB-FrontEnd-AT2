@@ -1,5 +1,6 @@
 body{
-font-family: Arial, sans-serif;
+font-family: Arial, Helvetica, sans-serif;
+background: rgb(11, 182, 182);
 }
 
 fieldset{
@@ -11,7 +12,7 @@ fieldset{
     margin-bottom:  20px;
 }
 .section{
-    background-color: rgb(247, 255, 255);
+    background-color: rgb(31, 100, 100);
     display: flex;
 }
 
@@ -19,20 +20,25 @@ fieldset{
     max-width: 1000px;
     margin: 0 auto;
     padding: 10px;
-}
-
-.content-section{
-   justify-content: space-between;
+    background-color: rgba(9, 9, 255, 0.925);
 }
 
 .content-section {
-    flex: 1; 
+    flex: 1;
+    padding: 10px; 
+    margin-right: 10px; 
+    background-color: blueviolet;
+}
+
+.content-section-compras{
+    background-color: brown;
     padding: 10px; 
     margin-right: 10px; 
 }
 
-
-.img-margin{
-    margin-bottom: 10px;
+.details{
+    background-color: yellow;
+    display: flex;
+    align-items: flex-end;
 }
 
