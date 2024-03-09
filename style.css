@@ -7,8 +7,9 @@ fieldset{
 }
 
 h2 {
-    background-color: rgba(59, 119, 250, 0.863);
+    background-color: rgba(129, 92, 197, 0.863); 
     padding: 30px;
+    color: white;
 }
 .container{
     max-width: 1000px;
