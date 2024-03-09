@@ -1,44 +1,36 @@
 body{
 font-family: Arial, Helvetica, sans-serif;
-background: rgb(11, 182, 182);
 }
-
-fieldset{
-    margin-bottom:  20px;
-}
-
-.border{
-    border: 1px solid black;
-    margin-bottom:  20px;
-}
-.section{
-    background-color: rgb(31, 100, 100);
-    display: flex;
-}
-
 .container{
     max-width: 1000px;
     margin: 0 auto;
     padding: 10px;
-    background-color: rgba(9, 9, 255, 0.925);
 }
-
+.section{
+    display: flex;
+    margin-left: 10px;
+}
+.border{
+    width: 100%;
+    border: 1px solid black;
+    margin-bottom: 20px;
+ 
+}
 .content-section {
     flex: 1;
     padding: 10px; 
-    margin-right: 10px; 
-    background-color: blueviolet;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .content-section-compras{
-    background-color: brown;
     padding: 10px; 
-    margin-right: 10px; 
 }
-
-.details{
-    background-color: yellow;
-    display: flex;
-    align-items: flex-end;
+.details-container{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
 }
+    
 
