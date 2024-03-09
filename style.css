@@ -1,24 +1,35 @@
 body{
 font-family: Arial, Helvetica, sans-serif;
 }
+
+fieldset{
+    margin-bottom: 20px;
+}
+
+h2 {
+    background-color: rgba(59, 119, 250, 0.863);
+    padding: 30px;
+}
 .container{
     max-width: 1000px;
     margin: 0 auto;
     padding: 10px;
 }
+.box-section{
+    max-width: 1000px;
+    padding: 10px;
+}
 .section{
-    display: flex;
-    margin-left: 10px;
+    display: flex;    
 }
 .border{
     width: 100%;
     border: 1px solid black;
     margin-bottom: 20px;
- 
 }
 .content-section {
     flex: 1;
-    padding: 10px; 
+    padding: 20px; 
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
@@ -33,4 +44,10 @@ font-family: Arial, Helvetica, sans-serif;
    justify-content: space-around;
 }
     
+.button{
+   
+}
 
+.btn-salvar, .btn-send, .btn-rastreio  {
+    text-transform: uppercase;
+}
