@@ -45,8 +45,13 @@ h2 {
 }
     
 .button{
-   border-color:  rgba(59, 119, 250, 0.863);
-}
+    color: rgba(59, 119, 250, 0.863);
+    border: 2px solid rgba(59, 119, 250, 0.863); 
+    padding: 10px 15px; 
+    background-color: transparent;
+    cursor: pointer; 
+    border-radius: 5px;
+    }
 
 .btn-salvar, .btn-send, .btn-rastreio  {
     text-transform: uppercase;
