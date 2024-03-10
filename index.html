@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Minhas Compras</title>
 </head>
 <body>
     <div class="container">
       <header>
-            <div class="content-section">
+            <div class= "box-section">
                 <h1>Meus Pedidos</h1>
                 <nav>        
                     <ul>
@@ -22,8 +22,9 @@
       </header>
       
     <main>
-        <div class="content-section">
+        <div class= "box-section">
              <section id="meus-dados">
+                
                 <h2>Meus Dados</h2>
                 <form action="#">
                     <fieldset>
@@ -61,12 +62,13 @@
                                 <input type="text" placeholder="amanda" type="text" name="apelido">
                             </div>
                     </fieldset>
-                    <button class="btn-salvar" type="submit">Salvar Alterações</button>
+                    <button class="button btn-salvar" type="submit">Salvar Alterações</button>
                 </form>
             </div>
         </section>                
         
         <section id="minhas-compras">
+            <div class= "box-section">
             <h2>Minhas Compras</h2>
                 <div class="section border">
                     <div class="content-section">
@@ -90,7 +92,7 @@
                        
                     <div class="content-section">
                         <p>Acompanhamento</p> 
-                        <button type="button" onclick="document.getElementById('modalDialog').showModal();">
+                        <button class="button btn-rastreio" type="button" onclick="document.getElementById('modalDialog').showModal();">
                           Rastreio Detalhado
                         </button>
                         <dialog id="modalDialog">
@@ -99,9 +101,9 @@
                             <p>Entregue por: GFL</p>
                             <p>Código de rastreio: 123456789</p>
                               <p>Entregue em: 12/12/2020</p>
-                              <button type="button" onclick="document.getElementById('modalDialog').close()" >Fechar</button>   
+                              <button class="button" type="button" onclick="document.getElementById('modalDialog').close()" >Fechar</button>   
                         </dialog>  
-                    </div>
+                  </div>  
                 </div>
 
                 <div class="section border">
@@ -146,10 +148,13 @@
                 </details>
                 
                <hr>
+            </div>
+           
         </section>
         <section id="avaliar-produto">
+       
             <h2>Avaliação</h2>
-            <div class="content-section">
+            
                 <h2>Avaliação do produto</h2>
             <form action="#">
                 <fieldset>
@@ -173,8 +178,8 @@
                             <option>#ffffff</option>
                         </datalist>  
                     </div>
-                        <div>    
-                             <label for="qualidade-produto"><strong>O produto é de qualidade?</strong></label>
+                    <div class="content-section">                   
+                            <label for="qualidade-produto"><strong>O produto é de qualidade?</strong></label>
                        </div>
                         <div class="content-section">
                             <input type="radio" id="option-1" name="qualidade-produto" value="Concordo Totalmente">
@@ -251,11 +256,10 @@
                         <textarea id="story" name="story" rows="8" cols="30" name="comentario"></textarea>
                     </div>
                 </fieldset>    
-                <button class="btn-send">Enviar avaliação</button>
-            </div>
+                <button class="button btn-send">Enviar avaliação</button>
+            
         </section>
-      </div> 
-    </main>
+       </main>
     </div>  
 </body>
 </html>
